@@ -1,5 +1,6 @@
 import 'package:coffee_shop/common/button.dart';
 import 'package:coffee_shop/pages/signIn/signIn.dart';
+import 'package:coffee_shop/pages/signUp/signUp.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -98,7 +99,13 @@ class _SplashScreenState extends State<SplashScreen> {
                   size1: 100,
                   size2: 15,
                   backgroundColor: Color(0xFFFF1AA9B),
-                  onPressed: (() {}),
+                  onPressed: (() {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignUpPage(),
+                        ));
+                  }),
                 )
               ],
             )),
