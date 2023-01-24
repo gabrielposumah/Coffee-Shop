@@ -1,4 +1,5 @@
 import 'package:coffee_shop/common/headerDrawer.dart';
+import 'package:coffee_shop/pages/favorite/favorite.dart';
 import 'package:coffee_shop/pages/homePage/homePage.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class _MainPageState extends State<MainPage> {
 
   List<Widget> widgetList = [
     MyHomePage(),
-    SignInPage(),
+    FavoriteWidget(),
     SignUpPage(),
     SplashScreen(),
   ];
@@ -46,8 +47,9 @@ class _MainPageState extends State<MainPage> {
       body: widgetList[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: MyColors.purpleLight,
-        selectedItemColor: Colors.white,
+        selectedItemColor: MyColors.orangeColor,
         unselectedItemColor: Colors.white.withOpacity(.60),
+        currentIndex: _currentIndex,
         selectedFontSize: 14,
         unselectedFontSize: 14,
         type: BottomNavigationBarType.fixed,
