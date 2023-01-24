@@ -1,6 +1,7 @@
 import 'dart:collection';
 
 import 'package:coffee_shop/pages/homePage/homePage.dart';
+import 'package:coffee_shop/pages/mainPage/mainPage.dart';
 import 'package:coffee_shop/splash%20screen/splashScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFF312C51)),
-      home: const MyHomePage(),
+      home: MainPage(),
     );
   }
 }
