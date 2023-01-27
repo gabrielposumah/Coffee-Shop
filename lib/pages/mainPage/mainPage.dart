@@ -1,6 +1,8 @@
 import 'package:coffee_shop/common/headerDrawer.dart';
+import 'package:coffee_shop/pages/cart/cartPage.dart';
 import 'package:coffee_shop/pages/favorite/favorite.dart';
 import 'package:coffee_shop/pages/homePage/homePage.dart';
+import 'package:coffee_shop/pages/listCafe/listCafe.dart';
 import 'package:flutter/material.dart';
 
 import '../../splash screen/splashScreen.dart';
@@ -21,8 +23,8 @@ class _MainPageState extends State<MainPage> {
   List<Widget> widgetList = [
     MyHomePage(),
     FavoriteWidget(),
-    SignUpPage(),
-    SplashScreen(),
+    ListCafe(),
+    CartPage(),
   ];
 
   @override
